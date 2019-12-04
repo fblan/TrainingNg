@@ -1,0 +1,13 @@
+<H1>yo!</H1>
+
+<app-todo-form (addItem)="onAddItem($event)"></app-todo-form>
+<app-todo-list [toDoItemList]="toDoItems"></app-todo-list>
+
+<app-hello name="Fred"></app-hello>
+<app-hello [name]="prenom"></app-hello>
+<app-hello [name]="prenom | uppercase"></app-hello>
+<app-counter></app-counter>
+<app-user-form [user]="{name:'Z'}" (save)="user=$event"></app-user-form>
+<p>{{user.name}},{{user.email}},{{user.phone}}</p>
+
+<app-toggle-list [items]="['A','B','C']"></app-toggle-list>

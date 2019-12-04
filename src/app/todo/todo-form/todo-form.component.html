@@ -1,0 +1,8 @@
+<form (submit)="onSubmit($event)">
+<input 
+    [value]="itemName"
+    (input)="itemName=$event.target.value"
+    >
+<button>add</button>
+ 
+</form>

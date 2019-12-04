@@ -1,0 +1,10 @@
+<H1>TODO : the list</H1>
+
+<app-todo-item 
+    *ngFor="let item of orderItemsByIsDone()" 
+    
+    [item]="item"
+    (itemUpdated)="onItemUpdated(item)"
+    >
+    
+</app-todo-item>

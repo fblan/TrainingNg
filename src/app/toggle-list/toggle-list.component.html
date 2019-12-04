@@ -1,0 +1,10 @@
+<H1>The togglles!!!!</H1>
+
+<p 
+    *ngFor="let item of items" 
+    [ngClass]="{selected: isSelected(item)}"
+    (click)="toggleItem(item)"
+    >
+    <span *ngIf="isSelected(item)">-></span>
+    {{item}}
+</p>
